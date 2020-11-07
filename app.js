@@ -1,6 +1,8 @@
 const yargs = require('yargs');
 const axios = require('axios');
 
+const api = require('./api');
+
 const argv = yargs
     .options({
         city : {
@@ -16,8 +18,8 @@ const argv = yargs
 
 let encodedData = {
     encodedCity : encodeURIComponent(argv.city),
-    api : 'http://api.openweathermap.org/data/2.5/',
-    apiKey : 'da223011c27e04e2e57c4f860ba52b90'
+    api : api.API,       // Enter your API here.
+    apiKey : api.APIKEY  // Enter your API-KEY here
 };
 
 let url = `${encodedData.api}weather?q=${encodedData.encodedCity}&APPID=${encodedData.apiKey}`;
