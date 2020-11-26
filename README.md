@@ -23,14 +23,18 @@ The app Generates the report and provide the information of the following:
 
 In order to use this app you need to download or clone this repository on your local machine  for this run the below command in your terminal/powershell/cmd
 
+#### Cloning the repo 
+
 ```
 git clone https://github.com/shubham2704/CLI-Notes-App.git
 ```
 
-- After runnig the above command the app ready to use.
+- After runnig the above command the app is ready to use.
+
+#### Understanding the command.
 
 ```
-[ -c ] command is use to fetch the weather for city followed by the city name
+[ -c ] command is used to fetch the weather for city followed by the city name
 ```
 
 #### Fetching weather report
@@ -39,7 +43,7 @@ git clone https://github.com/shubham2704/CLI-Notes-App.git
 node app.js -c delhi
 ```
 
-## Weather report format
+#### Weather report format
 
 ```
 _________________________________Showing Weather result For Delhi__________________________________
